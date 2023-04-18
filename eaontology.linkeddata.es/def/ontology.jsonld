@@ -1,0 +1,658 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://eaontology.linkeddata.es/def/ExpectationAnalysis"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://eaontology.linkeddata.es/def/Application"
+    }, {
+      "@id" : "http://eaontology.linkeddata.es/def/Artefact"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+    }, {
+      "@id" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis"
+    } ]
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Karen Leticia Vazquez Flores"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Ontology code created by Chowlk"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "EA-Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.0.3"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Application",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Application"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/ApplicationLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Third level to ethical analysis, level in which moral features of uses of artifacts are analyzed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Application Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Artefact",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Physical configuration that, when operated in the proper manner and in the proper environment, produces a desired result (Brey, 2012)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Artefact"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/ArtefactLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Second level to ethical analysis in ATE, level in which moral features of artifacts are analyzed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Artefact Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Benefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The possible benefit for an ethical issue that is identified. Benefit in terms of promises"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Benefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Desirability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Regarding Expectations assed about how technology will address a social problem or need"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Desirability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Analysis to detail for study each expectation made for the technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ethical Analysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/EthicalAssessment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Process of analysis to know if a technology has an ethical negative impact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ethical Assessment"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Potential activity of ethical issues is assessed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ethical Evaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/EthicalIssue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ethical Issue"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/EthicalList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Ethical List"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Expectation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expectation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/ExpectationAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expectation Analysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Expectation Evaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Feature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Important characteristic or part of a Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Feature"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/NegativeImplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Potential risks and burdens with respect to ethical problems in each technogy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Negative Implication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/SocialUsability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Expectations about how the technology will be adopted by the intended users and how it will be integrated in current practice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Social Usability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/Technique",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technique"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/TechnologyFeasability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Expectations about characteristics and functioning of the technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technology Feasability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/TechnologyLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "First level to ethical analysis in ATE methodology. Level where the technology is describe in respect of features, techniques, etc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technology Level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/analyses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "analyses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Expectation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/assessTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "assess technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/consistsOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAssessment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "consists of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/contradictsExpectation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contradicts expectation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Expectation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/evaluates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "evaluates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalIssue"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/Expectation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/focusesOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ApplicationLevel"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/ArtefactLevel"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/TechnologyLevel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "focuses on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/formalFeaure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "formal feaure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Predictive studies of future technological devices, uses and social consequences (Brey, 2012)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fosesigt Analysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/functionalFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "functional feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/hasEthicalEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has ethical evaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid6"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/hasExpectationEvaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has expectation evaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/hasFeature",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Feature"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/identify",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identify"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalIssue"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/includes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "includes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/isAbout",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalAnalysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is about"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/isCollectionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is collection of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Technique"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/isUsedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Artefact"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is used in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Application"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/issuesIdentification",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activity made by an Agent to identify the possible ethical issues in a Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "issues Identification"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "purpose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/specificActivity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Technique"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "specific activity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/suggest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "suggest"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/supportExpectation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "support expectation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Expectation"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/typeOfTechnology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "type of technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/use",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/Application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://eaontology.linkeddata.es/def/usedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/skgo/modsci#Technology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "used by"
+  } ]
+}, {
+  "@id" : "http://inference-web.org/2.0/pml-provenance.owl#Source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Source"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "identifier"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/pav/authoredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "authored by"
+  } ]
+}, {
+  "@id" : "http://purl.org/pav/createdBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation"
+  }, {
+    "@id" : "https://w3id.org/eboca/evidences#Evidence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "created by"
+  } ]
+}, {
+  "@id" : "http://purl.org/pav/createdOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "created on"
+  } ]
+}, {
+  "@id" : "http://purl.org/pav/derivedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalEvaluation"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalIssue"
+  }, {
+    "@id" : "http://eaontology.linkeddata.es/def/Expectation"
+  }, {
+    "@id" : "https://w3id.org/eboca/evidences#Evidence"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derived from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://eaontology.linkeddata.es/def/EthicalList"
+  }, {
+    "@id" : "http://inference-web.org/2.0/pml-provenance.owl#Source"
+  }, {
+    "@id" : "https://w3id.org/eboca/evidences#Evidence"
+  } ]
+}, {
+  "@id" : "http://purl.org/pav/lastUpdatedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "last updated on"
+  } ]
+}, {
+  "@id" : "http://purl.org/pav/version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "version"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "see also"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Agent"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Group",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Group"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/givenName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "given name"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/mbox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "mbox"
+  } ]
+}, {
+  "@id" : "https://w3id.org/eboca/evidences#Evidence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Evidence"
+  } ]
+}, {
+  "@id" : "https://w3id.org/skgo/modsci#Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Technology"
+  } ]
+} ]

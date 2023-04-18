@@ -1,0 +1,446 @@
+@prefix : <http://eaontology.protect.linkeddata.es/def/eao#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://eaontology.protect.linkeddata.es/def/eao#> .
+
+<http://eaontology.protect.linkeddata.es/def/eao#> rdf:type owl:Ontology ;
+                                                    <http://purl.org/dc/termscreator> "Karen Vazquez, Elena Montiel-Ponsoda" ;
+                                                    <http://purl.org/dc/termsdescription> "Ontology code created by Chowlk" ;
+                                                    owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/termscreator
+<http://purl.org/dc/termscreator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/termsdescription
+<http://purl.org/dc/termsdescription> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://eaontology.protect.linkeddata.es/def/eao#affects
+:affects rdf:type owl:ObjectProperty ;
+         rdfs:domain :EthicalIssue ;
+         rdfs:range :User ;
+         rdfs:label "affects" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#analyzes
+:analyzes rdf:type owl:ObjectProperty ;
+          rdfs:domain :EthicalAssessment ;
+          rdfs:label "analyzes" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#evaluatesEthicalIssue
+:evaluatesEthicalIssue rdf:type owl:ObjectProperty ;
+                       rdfs:domain :EthicalAssessment ;
+                       rdfs:range :EthicalIssue ;
+                       rdfs:label "evaluates ethical issue" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#evaluatesExpectation
+:evaluatesExpectation rdf:type owl:ObjectProperty ;
+                      rdfs:domain :EthicalAssessment ;
+                      rdfs:range :Expectation ;
+                      rdfs:label "evaluates expectation" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasContraEvidence
+:hasContraEvidence rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Evidence ;
+                   rdfs:range :ContraEvidence ;
+                   rdfs:label "has contra evidence" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasEvidence
+:hasEvidence rdf:type owl:ObjectProperty ;
+             rdfs:domain :EthicalIssue ;
+             rdfs:range :Evidence ;
+             rdfs:label "has evidence" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasFeature
+:hasFeature rdf:type owl:ObjectProperty ;
+            rdfs:domain :EmergingTechnology ;
+            rdfs:range :Feature ;
+            rdfs:label "has feature" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:domain :EmergingTechnology ;
+             rdfs:label "has function" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasImpact
+:hasImpact rdf:type owl:ObjectProperty ;
+           rdfs:domain :Evidence ;
+           rdfs:range :Impact ;
+           rdfs:label "has impact" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#hasUser
+:hasUser rdf:type owl:ObjectProperty ;
+         rdfs:domain :EmergingTechnology ;
+         rdfs:range :User ;
+         rdfs:label "has user" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#inducesEthicalIssue
+:inducesEthicalIssue rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Expectation ;
+                     rdfs:label "induces ethical issue" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#isBasedOn
+:isBasedOn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Expectation ;
+           rdfs:range :Evidence ;
+           rdfs:label "is based on" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#isLocatedAt
+:isLocatedAt rdf:type owl:ObjectProperty ;
+             rdfs:domain :EthicalIssue ;
+             rdfs:range :EthicalList ;
+             rdfs:label "is located at" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#isMadeBy
+:isMadeBy rdf:type owl:ObjectProperty ;
+          rdfs:domain :EthicalAssessment ;
+          rdfs:range :Author ;
+          rdfs:label "is made by" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#useInContext
+:useInContext rdf:type owl:ObjectProperty ;
+              rdfs:domain :User ;
+              rdfs:range :ContextOfUse ;
+              rdfs:label "use in context" .
+
+
+###  http://purl.org/pavcreatedBy
+<http://purl.org/pavcreatedBy> rdf:type owl:ObjectProperty ;
+                               rdfs:domain :Evidence ;
+                               rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+                               rdfs:label "created by" .
+
+
+###  http://purl.org/pavcreatedWith
+<http://purl.org/pavcreatedWith> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :Evidence ;
+                                 rdfs:range <http://purl.org/dc/termsSoftware> ;
+                                 rdfs:label "created with" .
+
+
+###  http://purl.org/pavderivedFrom
+<http://purl.org/pavderivedFrom> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain :Evidence ;
+                                 rdfs:range <http://purl.org/spar/doco/Paragraph> ;
+                                 rdfs:label "derived from" .
+
+
+###  http://purl.org/vocab/frbr/core#part
+<http://purl.org/vocab/frbr/core#part> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://purl.org/spar/fabio/Expression> ;
+                                       rdfs:range <http://purl.org/spar/doco/Paragraph> ;
+                                       rdfs:label "part" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Identifier
+:Identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "identifier" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#LikelihoodOfAffectation
+:LikelihoodOfAffectation rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:string ;
+                         rdfs:label "likelihood of affectation" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#OverallAffectation
+:OverallAffectation rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:string ;
+                    rdfs:label "overall affectation" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#SeverityOfAffectation
+:SeverityOfAffectation rdf:type owl:DatatypeProperty ;
+                       rdfs:range xsd:string ;
+                       rdfs:label "severity of affectation" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string ;
+             rdfs:label "description" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#group
+:group rdf:type owl:DatatypeProperty ;
+       rdfs:range xsd:string ;
+       rdfs:label "group" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#identifier
+:identifier rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "identifier" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:range xsd:string ;
+      rdfs:label "name" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#purpose
+:purpose rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:string ;
+         rdfs:label "purpose" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:range xsd:float ;
+         rdfs:label "version" .
+
+
+###  http://purl.org/pavcreatedOn
+<http://purl.org/pavcreatedOn> rdf:type owl:DatatypeProperty ;
+                               rdfs:range xsd:date ;
+                               rdfs:label "created on" .
+
+
+###  http://purl.org/pavlastUpdateOn
+<http://purl.org/pavlastUpdateOn> rdf:type owl:DatatypeProperty ;
+                                  rdfs:range xsd:dateTime ;
+                                  rdfs:label "last update on" .
+
+
+###  http://purl.org/pavversion
+<http://purl.org/pavversion> rdf:type owl:DatatypeProperty ;
+                             rdfs:range xsd:string ;
+                             rdfs:label "version" .
+
+
+###  http://purl.org/dc/termsabstract
+<http://purl.org/dc/termsabstract> rdf:type owl:DatatypeProperty ;
+                                   rdfs:label "abstract" .
+
+
+###  http://purl.org/dc/termsidentifier
+<http://purl.org/dc/termsidentifier> rdf:type owl:DatatypeProperty ;
+                                     rdfs:label "identifier" .
+
+
+###  http://purl.org/dc/termstitle
+<http://purl.org/dc/termstitle> rdf:type owl:DatatypeProperty ;
+                                rdfs:label "title" .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:DatatypeProperty ;
+             rdfs:label "see also" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Application
+:Application rdf:type owl:Class ;
+             rdfs:subClassOf :EmergingTechnology ;
+             rdfs:label "Application" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Artefact
+:Artefact rdf:type owl:Class ;
+          rdfs:subClassOf :EmergingTechnology ;
+          rdfs:label "Artefact" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Author
+:Author rdf:type owl:Class ;
+        rdfs:label "Author" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#ContextOfUse
+:ContextOfUse rdf:type owl:Class ;
+              rdfs:label "Context Of Use" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#ContraEvidence
+:ContraEvidence rdf:type owl:Class ;
+                rdfs:label "Contra Evidence" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Desirability
+:Desirability rdf:type owl:Class ;
+              rdfs:subClassOf :Expectation ;
+              rdfs:label "Desirability" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#EmergingTechnology
+:EmergingTechnology rdf:type owl:Class ;
+                    rdfs:label "Emerging Technology" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#EthicalAssessment
+:EthicalAssessment rdf:type owl:Class ;
+                   rdfs:label "Ethical Assessment" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#EthicalIssue
+:EthicalIssue rdf:type owl:Class ;
+              rdfs:label "Ethical Issue" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#EthicalList
+:EthicalList rdf:type owl:Class ;
+             rdfs:label "Ethical List" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Evidence
+:Evidence rdf:type owl:Class ;
+          rdfs:label "Evidence" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Expectation
+:Expectation rdf:type owl:Class ;
+             rdfs:label "Expectation" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Feature
+:Feature rdf:type owl:Class ;
+         rdfs:label "Feature" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Function
+:Function rdf:type owl:Class ;
+          rdfs:label "Function" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#HarmAndRisk
+:HarmAndRisk rdf:type owl:Class ;
+             rdfs:subClassOf :EthicalList ;
+             rdfs:label "Harm And Risk" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Impact
+:Impact rdf:type owl:Class ;
+        rdfs:label "Impact" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Justice
+:Justice rdf:type owl:Class ;
+         rdfs:subClassOf :EthicalList ;
+         rdfs:label "Justice" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#MainUser
+:MainUser rdf:type owl:Class ;
+          rdfs:subClassOf :User ;
+          rdfs:label "Main User" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Right
+:Right rdf:type owl:Class ;
+       rdfs:subClassOf :EthicalList ;
+       rdfs:label "Right" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#SecundaryUser
+:SecundaryUser rdf:type owl:Class ;
+               rdfs:subClassOf :User ;
+               rdfs:label "Secundary User" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#SocialUsability
+:SocialUsability rdf:type owl:Class ;
+                 rdfs:subClassOf :Expectation ;
+                 rdfs:label "Social Usability" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#TechnologicalFeasability
+:TechnologicalFeasability rdf:type owl:Class ;
+                          rdfs:subClassOf :Expectation ;
+                          rdfs:label "Technological Feasability" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Technology
+:Technology rdf:type owl:Class ;
+            rdfs:subClassOf :EmergingTechnology ;
+            rdfs:label "Technology" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#User
+:User rdf:type owl:Class ;
+      rdfs:label "User" .
+
+
+###  http://eaontology.protect.linkeddata.es/def/eao#Well-beingAndCommonGood
+:Well-beingAndCommonGood rdf:type owl:Class ;
+                         rdfs:subClassOf :EthicalList ;
+                         rdfs:label "Well-being And Common Good" .
+
+
+###  http://purl.org/dc/termsSoftware
+<http://purl.org/dc/termsSoftware> rdf:type owl:Class ;
+                                   rdfs:label "Software" .
+
+
+###  http://purl.org/spar/doco/Paragraph
+<http://purl.org/spar/doco/Paragraph> rdf:type owl:Class ;
+                                      rdfs:label "Paragraph" .
+
+
+###  http://purl.org/spar/fabio/Expression
+<http://purl.org/spar/fabio/Expression> rdf:type owl:Class ;
+                                        rdfs:label "Expression" .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:label "Agent" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://eaontology.protect.linkeddata.es/def/eao#
+<http://eaontology.protect.linkeddata.es/def/eao#> rdf:type owl:NamedIndividual ;
+                                                   <http://purl.org/dc/termstitle> "EAONTOLOGY" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

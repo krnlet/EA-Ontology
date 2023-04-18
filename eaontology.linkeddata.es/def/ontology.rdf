@@ -1,0 +1,744 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://eaontology.linkeddata.es/def/"
+     xml:base="http://eaontology.linkeddata.es/def/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://eaontology.linkeddata.es/def/">
+        <terms:creator>Karen Leticia Vazquez Flores</terms:creator>
+        <terms:description>Ontology code created by Chowlk</terms:description>
+        <terms:title>EA-Ontology</terms:title>
+        <owl:versionInfo>0.0.3</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/analyses -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/analyses">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationAnalysis"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Expectation"/>
+        <rdfs:label>analyses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/assessTechnology -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/assessTechnology">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAssessment"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:label>assess technology</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/consistsOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/consistsOf">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAssessment"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://eaontology.linkeddata.es/def/ExpectationAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>consists of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/contradictsExpectation -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/contradictsExpectation">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Expectation"/>
+        <rdfs:label>contradicts expectation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/evaluates -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/evaluates">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/fosesigtAnalysis"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/EthicalIssue"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Expectation"/>
+        <rdfs:label>evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/focusesOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/focusesOn">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ApplicationLevel"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ArtefactLevel"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/TechnologyLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://eaontology.linkeddata.es/def/Application"/>
+                    <rdf:Description rdf:about="http://eaontology.linkeddata.es/def/Artefact"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>focuses on</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/hasEthicalEvaluation -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/hasEthicalEvaluation">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+                    <rdf:Description rdf:about="http://eaontology.linkeddata.es/def/fosesigtAnalysis"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>has ethical evaluation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/hasExpectationEvaluation -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/hasExpectationEvaluation">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationAnalysis"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:label>has expectation evaluation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/hasFeature -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/hasFeature">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Feature"/>
+        <rdfs:label>has feature</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/identify -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/identify">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/EthicalIssue"/>
+        <rdfs:label>identify</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/includes -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/includes">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/fosesigtAnalysis"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+        <rdfs:label>includes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/isAbout -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/isAbout">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:label>is about</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/isCollectionOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/isCollectionOf">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Technique"/>
+        <rdfs:label>is collection of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/isUsedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/isUsedIn">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Artefact"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Application"/>
+        <rdfs:label>is used in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/suggest -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/suggest">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:label>suggest</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/supportExpectation -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/supportExpectation">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/Expectation"/>
+        <rdfs:label>support expectation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/usedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://eaontology.linkeddata.es/def/usedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:label>used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/pav/authoredBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/pav/authoredBy">
+        <rdfs:label>authored by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/pav/createdBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/pav/createdBy">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/eboca/evidences#Evidence"/>
+        <rdfs:label>created by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/pav/derivedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="http://purl.org/pav/derivedFrom">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/EthicalIssue"/>
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Expectation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/eboca/evidences#Evidence"/>
+        <rdfs:range rdf:resource="http://eaontology.linkeddata.es/def/EthicalList"/>
+        <rdfs:range rdf:resource="http://inference-web.org/2.0/pml-provenance.owl#Source"/>
+        <rdfs:range rdf:resource="https://w3id.org/eboca/evidences#Evidence"/>
+        <rdfs:label>derived from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/description -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/formalFeaure -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/formalFeaure">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>formal feaure</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/functionalFeature -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/functionalFeature">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label>functional feature</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/purpose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/purpose">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>purpose</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/specificActivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/specificActivity">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Technique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>specific activity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/typeOfTechnology -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/typeOfTechnology">
+        <rdfs:domain rdf:resource="https://w3id.org/skgo/modsci#Technology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>type of technology</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/use -->
+
+
+    <owl:DatatypeProperty rdf:about="http://eaontology.linkeddata.es/def/use">
+        <rdfs:domain rdf:resource="http://eaontology.linkeddata.es/def/Application"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>use</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/pav/createdOn -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/pav/createdOn">
+        <rdfs:label>created on</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/pav/lastUpdatedOn -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/pav/lastUpdatedOn">
+        <rdfs:label>last updated on</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/pav/version -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/pav/version">
+        <rdfs:label>version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
+        <rdfs:label>see also</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/givenName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/givenName">
+        <rdfs:label>given name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/mbox -->
+
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/mbox">
+        <rdfs:label>mbox</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Application -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Application">
+        <rdfs:label>Application</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/ApplicationLevel -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/ApplicationLevel">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:comment>Third level to ethical analysis, level in which moral features of uses of artifacts are analyzed</rdfs:comment>
+        <rdfs:label>Application Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Artefact -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Artefact">
+        <rdfs:comment>Physical configuration that, when operated in the proper manner and in the proper environment, produces a desired result (Brey, 2012)</rdfs:comment>
+        <rdfs:label>Artefact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/ArtefactLevel -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/ArtefactLevel">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:comment>Second level to ethical analysis in ATE, level in which moral features of artifacts are analyzed</rdfs:comment>
+        <rdfs:label>Artefact Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Benefit -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Benefit">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+        <rdfs:comment>The possible benefit for an ethical issue that is identified. Benefit in terms of promises</rdfs:comment>
+        <rdfs:label>Benefit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Desirability -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Desirability">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:comment>Regarding Expectations assed about how technology will address a social problem or need</rdfs:comment>
+        <rdfs:label>Desirability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/EthicalAnalysis -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/EthicalAnalysis">
+        <rdfs:comment>Analysis to detail for study each expectation made for the technology</rdfs:comment>
+        <rdfs:label>Ethical Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/EthicalAssessment -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/EthicalAssessment">
+        <rdfs:comment>Process of analysis to know if a technology has an ethical negative impact</rdfs:comment>
+        <rdfs:label>Ethical Assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/EthicalEvaluation -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/EthicalEvaluation">
+        <rdfs:comment>Potential activity of ethical issues is assessed</rdfs:comment>
+        <rdfs:label>Ethical Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/EthicalIssue -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/EthicalIssue">
+        <rdfs:label>Ethical Issue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/EthicalList -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/EthicalList">
+        <rdfs:label>Ethical List</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Expectation -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Expectation">
+        <rdfs:label>Expectation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/ExpectationAnalysis -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/ExpectationAnalysis">
+        <rdfs:label>Expectation Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/ExpectationEvaluation -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/ExpectationEvaluation">
+        <rdfs:label>Expectation Evaluation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Feature -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Feature">
+        <rdfs:comment>Important characteristic or part of a Technology</rdfs:comment>
+        <rdfs:label>Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/NegativeImplication -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/NegativeImplication">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/EthicalEvaluation"/>
+        <rdfs:comment>Potential risks and burdens with respect to ethical problems in each technogy</rdfs:comment>
+        <rdfs:label>Negative Implication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/SocialUsability -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/SocialUsability">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:comment>Expectations about how the technology will be adopted by the intended users and how it will be integrated in current practice</rdfs:comment>
+        <rdfs:label>Social Usability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/Technique -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/Technique">
+        <rdfs:label>Technique</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/TechnologyFeasability -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/TechnologyFeasability">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/ExpectationEvaluation"/>
+        <rdfs:comment>Expectations about characteristics and functioning of the technology</rdfs:comment>
+        <rdfs:label>Technology Feasability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/TechnologyLevel -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/TechnologyLevel">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/EthicalAnalysis"/>
+        <rdfs:comment>First level to ethical analysis in ATE methodology. Level where the technology is describe in respect of features, techniques, etc</rdfs:comment>
+        <rdfs:label>Technology Level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/fosesigtAnalysis -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/fosesigtAnalysis">
+        <rdfs:comment>Predictive studies of future technological devices, uses and social consequences (Brey, 2012)</rdfs:comment>
+        <rdfs:label>fosesigt Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://eaontology.linkeddata.es/def/issuesIdentification -->
+
+
+    <owl:Class rdf:about="http://eaontology.linkeddata.es/def/issuesIdentification">
+        <rdfs:subClassOf rdf:resource="http://eaontology.linkeddata.es/def/fosesigtAnalysis"/>
+        <rdfs:comment>Activity made by an Agent to identify the possible ethical issues in a Technology</rdfs:comment>
+        <rdfs:label>issues Identification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://inference-web.org/2.0/pml-provenance.owl#Source -->
+
+
+    <owl:Class rdf:about="http://inference-web.org/2.0/pml-provenance.owl#Source">
+        <rdfs:label>Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent">
+        <rdfs:label>Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Group -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Group">
+        <rdfs:label>Group</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/eboca/evidences#Evidence -->
+
+
+    <owl:Class rdf:about="https://w3id.org/eboca/evidences#Evidence">
+        <rdfs:label>Evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/skgo/modsci#Technology -->
+
+
+    <owl:Class rdf:about="https://w3id.org/skgo/modsci#Technology">
+        <rdfs:label>Technology</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

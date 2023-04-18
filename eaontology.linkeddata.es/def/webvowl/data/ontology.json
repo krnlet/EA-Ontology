@@ -1,0 +1,1246 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://purl.org/pav", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "https://w3id.org/eboca/evidences", "http://eaontology.linkeddata.es/def", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1", "https://w3id.org/skgo/modsci", "http://inference-web.org/2.0/pml-provenance.owl" ],
+    "title" : {
+      "undefined" : "EA-Ontology"
+    },
+    "iri" : "http://eaontology.linkeddata.es/def/",
+    "version" : "0.0.3",
+    "author" : [ "Karen Leticia Vazquez Flores" ],
+    "description" : {
+      "undefined" : "Ontology code created by Chowlk"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Karen Leticia Vazquez Flores",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.3",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "EA-Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "56",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://eaontology.linkeddata.es/def/ArtefactLevel",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArtefactLevel",
+      "undefined" : "Artefact Level"
+    },
+    "comment" : {
+      "undefined" : "Second level to ethical analysis in ATE, level in which moral features of artifacts are analyzed"
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "5" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "13"
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "5", "17" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "15"
+  }, {
+    "instances" : 0,
+    "union" : [ "20", "21" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/TechnologyLevel",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyLevel",
+      "undefined" : "Technology Level"
+    },
+    "comment" : {
+      "undefined" : "First level to ethical analysis in ATE methodology. Level where the technology is describe in respect of features, techniques, etc"
+    },
+    "id" : "22",
+    "superClasses" : [ "7" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "24", "6", "22" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "23"
+  }, {
+    "instances" : 0,
+    "union" : [ "26", "27" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "28",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "20", "21", "17" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "30"
+  }, {
+    "instances" : 0,
+    "union" : [ "33", "14", "34" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://inference-web.org/2.0/pml-provenance.owl#Source",
+    "baseIri" : "http://inference-web.org/2.0/pml-provenance.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Source",
+      "undefined" : "Source"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/ApplicationLevel",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApplicationLevel",
+      "undefined" : "Application Level"
+    },
+    "comment" : {
+      "undefined" : "Third level to ethical analysis, level in which moral features of uses of artifacts are analyzed"
+    },
+    "id" : "24",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/EthicalIssue",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthicalIssue",
+      "undefined" : "Ethical Issue"
+    },
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "9",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "49",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/skgo/modsci#Technology",
+    "baseIri" : "https://w3id.org/skgo/modsci",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Technology",
+      "undefined" : "Technology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/EthicalEvaluation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthicalEvaluation",
+      "undefined" : "Ethical Evaluation"
+    },
+    "subClasses" : [ "53", "54" ],
+    "comment" : {
+      "undefined" : "Potential activity of ethical issues is assessed"
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "55",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "56",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/EthicalAnalysis",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthicalAnalysis",
+      "undefined" : "Ethical Analysis"
+    },
+    "subClasses" : [ "24", "6", "22" ],
+    "comment" : {
+      "undefined" : "Analysis to detail for study each expectation made for the technology"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Desirability",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Desirability",
+      "undefined" : "Desirability"
+    },
+    "comment" : {
+      "undefined" : "Regarding Expectations assed about how technology will address a social problem or need"
+    },
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Benefit",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Benefit",
+      "undefined" : "Benefit"
+    },
+    "comment" : {
+      "undefined" : "The possible benefit for an ethical issue that is identified. Benefit in terms of promises"
+    },
+    "id" : "54",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Technique",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Technique",
+      "undefined" : "Technique"
+    },
+    "id" : "45"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Application",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Application",
+      "undefined" : "Application"
+    },
+    "id" : "51"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Artefact",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artefact",
+      "undefined" : "Artefact"
+    },
+    "comment" : {
+      "undefined" : "Physical configuration that, when operated in the proper manner and in the proper environment, produces a desired result (Brey, 2012)"
+    },
+    "id" : "62"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/issuesIdentification",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "issuesIdentification",
+      "undefined" : "issues Identification"
+    },
+    "comment" : {
+      "undefined" : "Activity made by an Agent to identify the possible ethical issues in a Technology"
+    },
+    "id" : "72",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/ExpectationEvaluation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpectationEvaluation",
+      "undefined" : "Expectation Evaluation"
+    },
+    "subClasses" : [ "12", "4", "69" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/EthicalList",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthicalList",
+      "undefined" : "Ethical List"
+    },
+    "id" : "33"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/SocialUsability",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SocialUsability",
+      "undefined" : "Social Usability"
+    },
+    "comment" : {
+      "undefined" : "Expectations about how the technology will be adopted by the intended users and how it will be integrated in current practice"
+    },
+    "id" : "12",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Expectation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Expectation",
+      "undefined" : "Expectation"
+    },
+    "id" : "20"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/fosesigtAnalysis",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "fosesigtAnalysis",
+      "undefined" : "fosesigt Analysis"
+    },
+    "subClasses" : [ "72" ],
+    "comment" : {
+      "undefined" : "Predictive studies of future technological devices, uses and social consequences (Brey, 2012)"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/NegativeImplication",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NegativeImplication",
+      "undefined" : "Negative Implication"
+    },
+    "comment" : {
+      "undefined" : "Potential risks and burdens with respect to ethical problems in each technogy"
+    },
+    "id" : "53",
+    "superClasses" : [ "17" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "16", "17" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "84",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/EthicalAssessment",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EthicalAssessment",
+      "undefined" : "Ethical Assessment"
+    },
+    "comment" : {
+      "undefined" : "Process of analysis to know if a technology has an ethical negative impact"
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/ExpectationAnalysis",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExpectationAnalysis",
+      "undefined" : "Expectation Analysis"
+    },
+    "id" : "60"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "60" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "74"
+  }, {
+    "instances" : 0,
+    "union" : [ "51", "62" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/TechnologyFeasability",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TechnologyFeasability",
+      "undefined" : "Technology Feasability"
+    },
+    "comment" : {
+      "undefined" : "Expectations about characteristics and functioning of the technology"
+    },
+    "id" : "69",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/Feature",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Feature",
+      "undefined" : "Feature"
+    },
+    "comment" : {
+      "undefined" : "Important characteristic or part of a Technology"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/eboca/evidences#Evidence",
+    "baseIri" : "https://w3id.org/eboca/evidences",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Evidence",
+      "undefined" : "Evidence"
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Group",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Group",
+      "undefined" : "Group"
+    },
+    "attributes" : [ "external" ],
+    "id" : "96"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://eaontology.linkeddata.es/def/functionalFeature",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "functionalFeature",
+      "undefined" : "functional feature"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.org/pav/lastUpdatedOn",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "lastUpdatedOn",
+      "undefined" : "last updated on"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "8"
+  }, {
+    "range" : "5",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/includes",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "includes",
+      "undefined" : "includes"
+    },
+    "domain" : "16",
+    "attributes" : [ "object" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://purl.org/pav/derivedFrom",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "derivedFrom",
+      "undefined" : "derived from"
+    },
+    "domain" : "30",
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/purpose",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "purpose",
+      "undefined" : "purpose"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://purl.org/pav/version",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "version",
+      "undefined" : "version"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/assessTechnology",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "assessTechnology",
+      "undefined" : "assess technology"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/givenName",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "givenName",
+      "undefined" : "given name"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/isCollectionOf",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "isCollectionOf",
+      "undefined" : "is collection of"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/use",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "use",
+      "undefined" : "use"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/suggest",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "suggest",
+      "undefined" : "suggest"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://purl.org/pav/authoredBy",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "authoredBy",
+      "undefined" : "authored by"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/analyses",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "analyses",
+      "undefined" : "analyses"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/hasExpectationEvaluation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasExpectationEvaluation",
+      "undefined" : "has expectation evaluation"
+    },
+    "domain" : "60",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "7",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/supportExpectation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "supportExpectation",
+      "undefined" : "support expectation"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "range" : "17",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "5",
+    "domain" : "69",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/pav/createdBy",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "createdBy",
+      "undefined" : "created by"
+    },
+    "domain" : "13",
+    "attributes" : [ "object", "external" ],
+    "id" : "70"
+  }, {
+    "range" : "16",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/consistsOf",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "consistsOf",
+      "undefined" : "consists of"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "range" : "17",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/usedBy",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "usedBy",
+      "undefined" : "used by"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/description",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "description",
+      "undefined" : "description"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/focusesOn",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "focusesOn",
+      "undefined" : "focuses on"
+    },
+    "domain" : "23",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "identifier",
+      "undefined" : "identifier"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/hasEthicalEvaluation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasEthicalEvaluation",
+      "undefined" : "has ethical evaluation"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/isAbout",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "isAbout",
+      "undefined" : "is about"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/identify",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "identify",
+      "undefined" : "identify"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/formalFeaure",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "84",
+    "label" : {
+      "IRI-based" : "formalFeaure",
+      "undefined" : "formal feaure"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/evaluates",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "evaluates",
+      "undefined" : "evaluates"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/isUsedIn",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "isUsedIn",
+      "undefined" : "is used in"
+    },
+    "domain" : "62",
+    "attributes" : [ "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/mbox",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "mbox",
+      "undefined" : "mbox"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/hasFeature",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "hasFeature",
+      "undefined" : "has feature"
+    },
+    "domain" : "27",
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "seeAlso",
+      "undefined" : "see also"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://purl.org/pav/createdOn",
+    "baseIri" : "http://purl.org/pav",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "createdOn",
+      "undefined" : "created on"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/typeOfTechnology",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "typeOfTechnology",
+      "undefined" : "type of technology"
+    },
+    "domain" : "27",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/contradictsExpectation",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "contradictsExpectation",
+      "undefined" : "contradicts expectation"
+    },
+    "domain" : "5",
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://eaontology.linkeddata.es/def/specificActivity",
+    "baseIri" : "http://eaontology.linkeddata.es/def",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "specificActivity",
+      "undefined" : "specific activity"
+    },
+    "domain" : "45",
+    "attributes" : [ "datatype" ],
+    "id" : "98"
+  } ]
+}

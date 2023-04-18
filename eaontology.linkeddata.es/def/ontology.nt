@@ -1,0 +1,400 @@
+<http://eaontology.linkeddata.es/def/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://eaontology.linkeddata.es/def/> <http://purl.org/dc/terms/creator> "Karen Leticia Vazquez Flores" .
+<http://eaontology.linkeddata.es/def/> <http://purl.org/dc/terms/description> "Ontology code created by Chowlk" .
+<http://eaontology.linkeddata.es/def/> <http://purl.org/dc/terms/title> "EA-Ontology" .
+<http://eaontology.linkeddata.es/def/> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.3" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://eaontology.linkeddata.es/def/analyses
+<http://eaontology.linkeddata.es/def/analyses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/analyses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationAnalysis> .
+<http://eaontology.linkeddata.es/def/analyses> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Expectation> .
+<http://eaontology.linkeddata.es/def/analyses> <http://www.w3.org/2000/01/rdf-schema#label> "analyses" .
+# 
+# http://eaontology.linkeddata.es/def/assessTechnology
+<http://eaontology.linkeddata.es/def/assessTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/assessTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAssessment> .
+<http://eaontology.linkeddata.es/def/assessTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/assessTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "assess technology" .
+# 
+# http://eaontology.linkeddata.es/def/consistsOf
+<http://eaontology.linkeddata.es/def/consistsOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/consistsOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAssessment> .
+<http://eaontology.linkeddata.es/def/consistsOf> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://eaontology.linkeddata.es/def/ExpectationAnalysis> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/consistsOf> <http://www.w3.org/2000/01/rdf-schema#label> "consists of" .
+# 
+# http://eaontology.linkeddata.es/def/contradictsExpectation
+<http://eaontology.linkeddata.es/def/contradictsExpectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/contradictsExpectation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/contradictsExpectation> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Expectation> .
+<http://eaontology.linkeddata.es/def/contradictsExpectation> <http://www.w3.org/2000/01/rdf-schema#label> "contradicts expectation" .
+# 
+# http://eaontology.linkeddata.es/def/evaluates
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/fosesigtAnalysis> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/EthicalIssue> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Expectation> .
+<http://eaontology.linkeddata.es/def/evaluates> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates" .
+# 
+# http://eaontology.linkeddata.es/def/focusesOn
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ApplicationLevel> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ArtefactLevel> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/TechnologyLevel> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://eaontology.linkeddata.es/def/Artefact> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://eaontology.linkeddata.es/def/Application> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/focusesOn> <http://www.w3.org/2000/01/rdf-schema#label> "focuses on" .
+# 
+# http://eaontology.linkeddata.es/def/hasEthicalEvaluation
+<http://eaontology.linkeddata.es/def/hasEthicalEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/hasEthicalEvaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/hasEthicalEvaluation> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#unionOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://eaontology.linkeddata.es/def/fosesigtAnalysis> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/hasEthicalEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "has ethical evaluation" .
+# 
+# http://eaontology.linkeddata.es/def/hasExpectationEvaluation
+<http://eaontology.linkeddata.es/def/hasExpectationEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/hasExpectationEvaluation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationAnalysis> .
+<http://eaontology.linkeddata.es/def/hasExpectationEvaluation> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/hasExpectationEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "has expectation evaluation" .
+# 
+# http://eaontology.linkeddata.es/def/hasFeature
+<http://eaontology.linkeddata.es/def/hasFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/hasFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/hasFeature> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Feature> .
+<http://eaontology.linkeddata.es/def/hasFeature> <http://www.w3.org/2000/01/rdf-schema#label> "has feature" .
+# 
+# http://eaontology.linkeddata.es/def/identify
+<http://eaontology.linkeddata.es/def/identify> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/identify> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/identify> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/EthicalIssue> .
+<http://eaontology.linkeddata.es/def/identify> <http://www.w3.org/2000/01/rdf-schema#label> "identify" .
+# 
+# http://eaontology.linkeddata.es/def/includes
+<http://eaontology.linkeddata.es/def/includes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/includes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/fosesigtAnalysis> .
+<http://eaontology.linkeddata.es/def/includes> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+<http://eaontology.linkeddata.es/def/includes> <http://www.w3.org/2000/01/rdf-schema#label> "includes" .
+# 
+# http://eaontology.linkeddata.es/def/isAbout
+<http://eaontology.linkeddata.es/def/isAbout> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/isAbout> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/isAbout> <http://www.w3.org/2000/01/rdf-schema#label> "is about" .
+# 
+# http://eaontology.linkeddata.es/def/isCollectionOf
+<http://eaontology.linkeddata.es/def/isCollectionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/isCollectionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/isCollectionOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Technique> .
+<http://eaontology.linkeddata.es/def/isCollectionOf> <http://www.w3.org/2000/01/rdf-schema#label> "is collection of" .
+# 
+# http://eaontology.linkeddata.es/def/isUsedIn
+<http://eaontology.linkeddata.es/def/isUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/isUsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Artefact> .
+<http://eaontology.linkeddata.es/def/isUsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Application> .
+<http://eaontology.linkeddata.es/def/isUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is used in" .
+# 
+# http://eaontology.linkeddata.es/def/suggest
+<http://eaontology.linkeddata.es/def/suggest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/suggest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/suggest> <http://www.w3.org/2000/01/rdf-schema#label> "suggest" .
+# 
+# http://eaontology.linkeddata.es/def/supportExpectation
+<http://eaontology.linkeddata.es/def/supportExpectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/supportExpectation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/supportExpectation> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/Expectation> .
+<http://eaontology.linkeddata.es/def/supportExpectation> <http://www.w3.org/2000/01/rdf-schema#label> "support expectation" .
+# 
+# http://eaontology.linkeddata.es/def/usedBy
+<http://eaontology.linkeddata.es/def/usedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://eaontology.linkeddata.es/def/usedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/usedBy> <http://www.w3.org/2000/01/rdf-schema#label> "used by" .
+# 
+# http://purl.org/pav/authoredBy
+<http://purl.org/pav/authoredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/pav/authoredBy> <http://www.w3.org/2000/01/rdf-schema#label> "authored by" .
+# 
+# http://purl.org/pav/createdBy
+<http://purl.org/pav/createdBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eboca/evidences#Evidence> .
+<http://purl.org/pav/createdBy> <http://www.w3.org/2000/01/rdf-schema#label> "created by" .
+# 
+# http://purl.org/pav/derivedFrom
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/EthicalIssue> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Expectation> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/eboca/evidences#Evidence> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://eaontology.linkeddata.es/def/EthicalList> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://inference-web.org/2.0/pml-provenance.owl#Source> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/eboca/evidences#Evidence> .
+<http://purl.org/pav/derivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "derived from" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://eaontology.linkeddata.es/def/description
+<http://eaontology.linkeddata.es/def/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://eaontology.linkeddata.es/def/description> <http://www.w3.org/2000/01/rdf-schema#label> "description" .
+# 
+# http://eaontology.linkeddata.es/def/formalFeaure
+<http://eaontology.linkeddata.es/def/formalFeaure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/formalFeaure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Feature> .
+<http://eaontology.linkeddata.es/def/formalFeaure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://eaontology.linkeddata.es/def/formalFeaure> <http://www.w3.org/2000/01/rdf-schema#label> "formal feaure" .
+# 
+# http://eaontology.linkeddata.es/def/functionalFeature
+<http://eaontology.linkeddata.es/def/functionalFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/functionalFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Feature> .
+<http://eaontology.linkeddata.es/def/functionalFeature> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://eaontology.linkeddata.es/def/functionalFeature> <http://www.w3.org/2000/01/rdf-schema#label> "functional feature" .
+# 
+# http://eaontology.linkeddata.es/def/purpose
+<http://eaontology.linkeddata.es/def/purpose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/purpose> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/purpose> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://eaontology.linkeddata.es/def/purpose> <http://www.w3.org/2000/01/rdf-schema#label> "purpose" .
+# 
+# http://eaontology.linkeddata.es/def/specificActivity
+<http://eaontology.linkeddata.es/def/specificActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/specificActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Technique> .
+<http://eaontology.linkeddata.es/def/specificActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://eaontology.linkeddata.es/def/specificActivity> <http://www.w3.org/2000/01/rdf-schema#label> "specific activity" .
+# 
+# http://eaontology.linkeddata.es/def/typeOfTechnology
+<http://eaontology.linkeddata.es/def/typeOfTechnology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/typeOfTechnology> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/skgo/modsci#Technology> .
+<http://eaontology.linkeddata.es/def/typeOfTechnology> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://eaontology.linkeddata.es/def/typeOfTechnology> <http://www.w3.org/2000/01/rdf-schema#label> "type of technology" .
+# 
+# http://eaontology.linkeddata.es/def/use
+<http://eaontology.linkeddata.es/def/use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://eaontology.linkeddata.es/def/use> <http://www.w3.org/2000/01/rdf-schema#domain> <http://eaontology.linkeddata.es/def/Application> .
+<http://eaontology.linkeddata.es/def/use> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://eaontology.linkeddata.es/def/use> <http://www.w3.org/2000/01/rdf-schema#label> "use" .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier" .
+# 
+# http://purl.org/pav/createdOn
+<http://purl.org/pav/createdOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/pav/createdOn> <http://www.w3.org/2000/01/rdf-schema#label> "created on" .
+# 
+# http://purl.org/pav/lastUpdatedOn
+<http://purl.org/pav/lastUpdatedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/pav/lastUpdatedOn> <http://www.w3.org/2000/01/rdf-schema#label> "last updated on" .
+# 
+# http://purl.org/pav/version
+<http://purl.org/pav/version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/pav/version> <http://www.w3.org/2000/01/rdf-schema#label> "version" .
+# 
+# http://www.w3.org/2000/01/rdf-schema#seeAlso
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#label> "see also" .
+# 
+# http://xmlns.com/foaf/0.1/givenName
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/givenName> <http://www.w3.org/2000/01/rdf-schema#label> "given name" .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/2000/01/rdf-schema#label> "mbox" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://eaontology.linkeddata.es/def/Application
+<http://eaontology.linkeddata.es/def/Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application" .
+# 
+# http://eaontology.linkeddata.es/def/ApplicationLevel
+<http://eaontology.linkeddata.es/def/ApplicationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/ApplicationLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/ApplicationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Third level to ethical analysis, level in which moral features of uses of artifacts are analyzed" .
+<http://eaontology.linkeddata.es/def/ApplicationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Application Level" .
+# 
+# http://eaontology.linkeddata.es/def/Artefact
+<http://eaontology.linkeddata.es/def/Artefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical configuration that, when operated in the proper manner and in the proper environment, produces a desired result (Brey, 2012)" .
+<http://eaontology.linkeddata.es/def/Artefact> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact" .
+# 
+# http://eaontology.linkeddata.es/def/ArtefactLevel
+<http://eaontology.linkeddata.es/def/ArtefactLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/ArtefactLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/ArtefactLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Second level to ethical analysis in ATE, level in which moral features of artifacts are analyzed" .
+<http://eaontology.linkeddata.es/def/ArtefactLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact Level" .
+# 
+# http://eaontology.linkeddata.es/def/Benefit
+<http://eaontology.linkeddata.es/def/Benefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Benefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+<http://eaontology.linkeddata.es/def/Benefit> <http://www.w3.org/2000/01/rdf-schema#comment> "The possible benefit for an ethical issue that is identified. Benefit in terms of promises" .
+<http://eaontology.linkeddata.es/def/Benefit> <http://www.w3.org/2000/01/rdf-schema#label> "Benefit" .
+# 
+# http://eaontology.linkeddata.es/def/Desirability
+<http://eaontology.linkeddata.es/def/Desirability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Desirability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/Desirability> <http://www.w3.org/2000/01/rdf-schema#comment> "Regarding Expectations assed about how technology will address a social problem or need" .
+<http://eaontology.linkeddata.es/def/Desirability> <http://www.w3.org/2000/01/rdf-schema#label> "Desirability" .
+# 
+# http://eaontology.linkeddata.es/def/EthicalAnalysis
+<http://eaontology.linkeddata.es/def/EthicalAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/EthicalAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Analysis to detail for study each expectation made for the technology" .
+<http://eaontology.linkeddata.es/def/EthicalAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Ethical Analysis" .
+# 
+# http://eaontology.linkeddata.es/def/EthicalAssessment
+<http://eaontology.linkeddata.es/def/EthicalAssessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/EthicalAssessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Process of analysis to know if a technology has an ethical negative impact" .
+<http://eaontology.linkeddata.es/def/EthicalAssessment> <http://www.w3.org/2000/01/rdf-schema#label> "Ethical Assessment" .
+# 
+# http://eaontology.linkeddata.es/def/EthicalEvaluation
+<http://eaontology.linkeddata.es/def/EthicalEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/EthicalEvaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Potential activity of ethical issues is assessed" .
+<http://eaontology.linkeddata.es/def/EthicalEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Ethical Evaluation" .
+# 
+# http://eaontology.linkeddata.es/def/EthicalIssue
+<http://eaontology.linkeddata.es/def/EthicalIssue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/EthicalIssue> <http://www.w3.org/2000/01/rdf-schema#label> "Ethical Issue" .
+# 
+# http://eaontology.linkeddata.es/def/EthicalList
+<http://eaontology.linkeddata.es/def/EthicalList> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/EthicalList> <http://www.w3.org/2000/01/rdf-schema#label> "Ethical List" .
+# 
+# http://eaontology.linkeddata.es/def/Expectation
+<http://eaontology.linkeddata.es/def/Expectation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Expectation> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation" .
+# 
+# http://eaontology.linkeddata.es/def/ExpectationAnalysis
+<http://eaontology.linkeddata.es/def/ExpectationAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/ExpectationAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation Analysis" .
+# 
+# http://eaontology.linkeddata.es/def/ExpectationEvaluation
+<http://eaontology.linkeddata.es/def/ExpectationEvaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/ExpectationEvaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation Evaluation" .
+# 
+# http://eaontology.linkeddata.es/def/Feature
+<http://eaontology.linkeddata.es/def/Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Feature> <http://www.w3.org/2000/01/rdf-schema#comment> "Important characteristic or part of a Technology" .
+<http://eaontology.linkeddata.es/def/Feature> <http://www.w3.org/2000/01/rdf-schema#label> "Feature" .
+# 
+# http://eaontology.linkeddata.es/def/NegativeImplication
+<http://eaontology.linkeddata.es/def/NegativeImplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/NegativeImplication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/EthicalEvaluation> .
+<http://eaontology.linkeddata.es/def/NegativeImplication> <http://www.w3.org/2000/01/rdf-schema#comment> "Potential risks and burdens with respect to ethical problems in each technogy" .
+<http://eaontology.linkeddata.es/def/NegativeImplication> <http://www.w3.org/2000/01/rdf-schema#label> "Negative Implication" .
+# 
+# http://eaontology.linkeddata.es/def/SocialUsability
+<http://eaontology.linkeddata.es/def/SocialUsability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/SocialUsability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/SocialUsability> <http://www.w3.org/2000/01/rdf-schema#comment> "Expectations about how the technology will be adopted by the intended users and how it will be integrated in current practice" .
+<http://eaontology.linkeddata.es/def/SocialUsability> <http://www.w3.org/2000/01/rdf-schema#label> "Social Usability" .
+# 
+# http://eaontology.linkeddata.es/def/Technique
+<http://eaontology.linkeddata.es/def/Technique> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/Technique> <http://www.w3.org/2000/01/rdf-schema#label> "Technique" .
+# 
+# http://eaontology.linkeddata.es/def/TechnologyFeasability
+<http://eaontology.linkeddata.es/def/TechnologyFeasability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/TechnologyFeasability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/ExpectationEvaluation> .
+<http://eaontology.linkeddata.es/def/TechnologyFeasability> <http://www.w3.org/2000/01/rdf-schema#comment> "Expectations about characteristics and functioning of the technology" .
+<http://eaontology.linkeddata.es/def/TechnologyFeasability> <http://www.w3.org/2000/01/rdf-schema#label> "Technology Feasability" .
+# 
+# http://eaontology.linkeddata.es/def/TechnologyLevel
+<http://eaontology.linkeddata.es/def/TechnologyLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/TechnologyLevel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/EthicalAnalysis> .
+<http://eaontology.linkeddata.es/def/TechnologyLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "First level to ethical analysis in ATE methodology. Level where the technology is describe in respect of features, techniques, etc" .
+<http://eaontology.linkeddata.es/def/TechnologyLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Technology Level" .
+# 
+# http://eaontology.linkeddata.es/def/fosesigtAnalysis
+<http://eaontology.linkeddata.es/def/fosesigtAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/fosesigtAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Predictive studies of future technological devices, uses and social consequences (Brey, 2012)" .
+<http://eaontology.linkeddata.es/def/fosesigtAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "fosesigt Analysis" .
+# 
+# http://eaontology.linkeddata.es/def/issuesIdentification
+<http://eaontology.linkeddata.es/def/issuesIdentification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://eaontology.linkeddata.es/def/issuesIdentification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://eaontology.linkeddata.es/def/fosesigtAnalysis> .
+<http://eaontology.linkeddata.es/def/issuesIdentification> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity made by an Agent to identify the possible ethical issues in a Technology" .
+<http://eaontology.linkeddata.es/def/issuesIdentification> <http://www.w3.org/2000/01/rdf-schema#label> "issues Identification" .
+# 
+# http://inference-web.org/2.0/pml-provenance.owl#Source
+<http://inference-web.org/2.0/pml-provenance.owl#Source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://inference-web.org/2.0/pml-provenance.owl#Source> <http://www.w3.org/2000/01/rdf-schema#label> "Source" .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# http://xmlns.com/foaf/0.1/Group
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#label> "Group" .
+# 
+# https://w3id.org/eboca/evidences#Evidence
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/eboca/evidences#Evidence> <http://www.w3.org/2000/01/rdf-schema#label> "Evidence" .
+# 
+# https://w3id.org/skgo/modsci#Technology
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/skgo/modsci#Technology> <http://www.w3.org/2000/01/rdf-schema#label> "Technology" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
